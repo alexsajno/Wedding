@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>שחר ואלכס – שמרו את התאריך</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Heebo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mist:#E6EDE4; --paper:#FAFCF9; --ink:#2A3B31; --sage:#7C9A86;
+  --moss:#34503F; --rose:#B98C88; --line:#B9CBBD;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  min-height:100vh; background:var(--mist); color:var(--ink);
+  font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  display:flex; justify-content:center; padding:28px 16px 40px;
+}
+main{width:100%; max-width:400px}
+.arch{
+  background:var(--paper); border:1.5px solid var(--line);
+  border-radius:999px 999px 18px 18px;
+  padding:72px 28px 36px; text-align:center;
+}
+.kicker{margin:0 0 14px; font-size:1.05rem; color:var(--sage); font-weight:500; letter-spacing:.02em}
+h1{
+  margin:0; font-family:"Frank Ruhl Libre","David Libre",Georgia,serif;
+  font-weight:700; font-size:3.2rem; line-height:1.1; color:var(--moss);
+}
+.rule{width:56px; height:1.5px; background:var(--rose); margin:24px auto}
+.date{margin:0; font-family:"Frank Ruhl Libre",Georgia,serif; font-size:1.55rem; font-weight:500}
+.time{margin:6px 0 0; font-size:1.05rem}
+.venue{margin:18px 0 0; font-size:1.05rem; line-height:1.5}
+.venue a{color:var(--moss); font-weight:500}
+.actions{margin-top:26px; display:grid; gap:12px}
+.btn{
+  display:block; padding:15px 18px; border-radius:12px; text-decoration:none;
+  font-weight:600; font-size:1.02rem; text-align:center;
+  border:1.5px solid var(--moss);
+}
+.btn.primary{background:var(--moss); color:#fff}
+.btn.secondary{background:transparent; color:var(--moss)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,.venue a:focus-visible{outline:3px solid var(--rose); outline-offset:3px}
+.note{margin:18px 4px 0; font-size:.85rem; line-height:1.55; color:#55665B; text-align:center}
+@media (max-width:360px){h1{font-size:2.7rem}}
+</style>
+</head>
+<body>
+<main>
+  <section class="arch">
+    <p class="kicker">שמרו את התאריך</p>
+    <h1>שחר<br>ואלכס</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="date">יום רביעי, 24 במרץ 2027</p>
+    <p class="time">19:00</p>
+    <p class="venue">אולם גרייס, ראשון לציון<br>
+      <a href="https://waze.com/ul?ll=31.9885229,34.7670739&amp;navigate=yes">ניווט בוויז</a></p>
+
+    <div class="actions">
+      <a class="btn primary" href="wedding_save_the_date.ics">הוספה ליומן באייפון / Outlook</a>
+      <a class="btn secondary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%A9%D7%97%D7%A8%20%D7%95%D7%90%D7%9C%D7%9B%D7%A1&amp;dates=20270324T190000/20270324T235900&amp;ctz=Asia/Jerusalem&amp;location=%D7%90%D7%95%D7%9C%D7%9D%20%D7%92%D7%A8%D7%99%D7%99%D7%A1%2C%20%D7%94%D7%90%D7%A6%D7%B4%D7%9C%209%2C%20%D7%A8%D7%90%D7%A9%D7%95%D7%9F%20%D7%9C%D7%A6%D7%99%D7%95%D7%9F" target="_blank" rel="noopener">הוספה ל־Google Calendar</a>
+    </div>
+    <p class="note">בקובץ האייפון / Outlook מוגדרת תזכורת 9 שעות לפני האירוע. ביומן של גוגל התזכורת נקבעת לפי ברירת המחדל שלכם.</p>
+  </section>
+</main>
+</body>
+</html>
